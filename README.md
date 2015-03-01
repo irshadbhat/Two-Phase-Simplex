@@ -21,58 +21,58 @@ Note that this method assumes that all the constraints are of '<=' form. So, if 
 Below is a list of examples and the corresponding input to the code:
 
 ====================================
-1. Maximize:	20x1 + 10x2
-
-    s.t:	x1  - x2 <= 1
-		3x1 + x2 <= 7
-Input: 
-
-MAX 2
-20 10
-1 -1 1
-3 1 7
-
-====================================
-2. Maximize:    3x1 + 4x2
-
-    s.t:	2x1 + x2  <= 600
-		x1  + x2  <= 225
-		5x1 + 4x2 <= 1000
-		x1  + 2x2 >= 150
-Input:
-
-MAX 4
-3 4
-2 1 600
-1 1 225
-5 4 1000
--1 -2 -150
+    1. Maximize:	20x1 + 10x2
+    
+        s.t:	x1  - x2 <= 1
+    		3x1 + x2 <= 7
+    Input: 
+    
+    MAX 2
+    20 10
+    1 -1 1
+    3 1 7
 
 ====================================
-3. Minimize:	x - x2
-	
-    s.t:	x1  + x2 >= 2
-		-x1 + x2 >= 1
-		      x2 <= 3
-Input:
-
-MIN 3
-1 -2
--1 -1 -2
-1 -1 -1
-0 1 3
+    2. Maximize:    3x1 + 4x2
+    
+        s.t:	2x1 + x2  <= 600
+    		x1  + x2  <= 225
+    		5x1 + 4x2 <= 1000
+    		x1  + 2x2 >= 150
+    Input:
+    
+    MAX 4
+    3 4
+    2 1 600
+    1 1 225
+    5 4 1000
+    -1 -2 -150
 
 ====================================
-4. Minimize:	2x1 + 3x2
-
-    s.t:	4x1 + 2x2 >= 12
-		x1  + 4x2 >= 6
-Input:
-
-MIN 2
-2 3
--4 -2 -12
--1 -4 -6
+    3. Minimize:	x - x2
+    	
+        s.t:	x1  + x2 >= 2
+    		-x1 + x2 >= 1
+    		      x2 <= 3
+    Input:
+    
+    MIN 3
+    1 -2
+    -1 -1 -2
+    1 -1 -1
+    0 1 3
+    
+====================================
+    4. Minimize:	2x1 + 3x2
+    
+        s.t:	4x1 + 2x2 >= 12
+    		x1  + 4x2 >= 6
+    Input:
+    
+    MIN 2
+    2 3
+    -4 -2 -12
+    -1 -4 -6
 
 ## Contact :
     Irshad Ahmad Bhat
