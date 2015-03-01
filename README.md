@@ -20,6 +20,7 @@ Note that this method assumes that all the constraints are of '<=' form. So, if 
 
 Below is a list of examples and the corresponding input to the code:
 
+    ===================
     1. Maximize:	
     	20x1 + 10x2
         s.t:	
@@ -32,6 +33,7 @@ Below is a list of examples and the corresponding input to the code:
 	1 -1 1
 	3 1 7
 
+    ===================
     2. Maximize:    
 	3x1 + 4x2
         s.t:	
@@ -48,6 +50,7 @@ Below is a list of examples and the corresponding input to the code:
 	5 4 1000
 	-1 -2 -150
 
+    ===================
     3. Minimize:	
 	x - x2
 	s.t:	
@@ -62,6 +65,7 @@ Below is a list of examples and the corresponding input to the code:
 	1 -1 -1
 	0 1 3
     
+    ===================
     4. Minimize:	
 	2x1 + 3x2
 	s.t:	
