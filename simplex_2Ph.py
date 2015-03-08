@@ -172,11 +172,15 @@ class two_phase_simplex():
         self.pprint(self.table)
         while not np.all(self.table[-1][:-1] <= 0):
             pivot_col = np.argmax(self.table[-1][:-1])
-            theta = self.table[:,-1][:-1] / self.table[:,pivot_col][:-1]
             # check for feasibility
             if np.all(self.table[:,pivot_col][:-1] <= 0) or \
-                np.all(self.table[:,-1][:-1] < 0) or \
-                np.all(theta < 0):
+		np.any(self.table[:,pivot_col][:-1] == 0) or \
+                np.all(self.table[:,-1][:-1] < 0):
+                print 'Infeasible solution'
+                exit()
+            theta = self.table[:,-1][:-1] / self.table[:,pivot_col][:-1]
+	    # check for feasibility
+            if np.all(theta < 0):
                 print 'Infeasible solution'
                 exit()
             # set negative ratios to some large no. (+ infinity)
